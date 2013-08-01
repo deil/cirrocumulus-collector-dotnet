@@ -7,15 +7,16 @@ namespace cirrocumuluscollectordotnet
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Starting collector service..");
 
             using (var host = new ServiceHost())
             {
                 host.Open();
+                Console.WriteLine("Press any key to stop.");
                 Console.ReadKey();
             }
 
-            return;
+            Console.WriteLine("Bye.");
         }
     }
 }

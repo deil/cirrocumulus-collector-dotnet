@@ -8,10 +8,10 @@ namespace Cirrocumulus.Collector
         {
         }
 
-        public string SendRawEvent(string @event)
+        public bool SendRawEvent(DateTime time, string origin, string @event)
         {
             Console.WriteLine(@event);
-            return "oh";
+            return true;
         }
     }
 }

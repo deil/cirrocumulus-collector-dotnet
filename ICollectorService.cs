@@ -7,6 +7,6 @@ namespace Cirrocumulus.Collector
     public interface ICollectorService
     {
         [OperationContract]
-        string SendRawEvent(string @event);
+        bool SendRawEvent(DateTime time, string origin, string @event);
     }
 }
